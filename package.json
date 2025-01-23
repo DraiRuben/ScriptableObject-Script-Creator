@@ -1,0 +1,10 @@
+{
+    "name": "com.Ruben.SOCreator",
+    "version": "1.0.0",
+    "displayName": "Scriptable Object Script Creator",
+    "description": "This is a tool to test out script creation",
+    "unity": "2021.0",
+    "author": {
+      "name": "Ruben"
+    }
+  }
