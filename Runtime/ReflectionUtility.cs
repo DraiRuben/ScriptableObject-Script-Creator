@@ -24,7 +24,7 @@ namespace Ruben.SOCreator
 
         public static List<Type> GetChildClasses(this Type parentType)
         {
-            return AppDomain.CurrentDomain.GetAssemblies().SelectMany(assembly => assembly.GetTypes()).Where(type => type.IsSubclassOf(parentType)).ToList();
+            return AppDomain.CurrentDomain.GetAssemblies().SelectMany(assembly => assembly.GetTypes()).Where(type => type.IsSubclassOf(parentType)).OrderBy(x=>x.Name).ToList();
         }
 
         private const BindingFlags allFlags = BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Static | BindingFlags.Instance | BindingFlags.FlattenHierarchy;
